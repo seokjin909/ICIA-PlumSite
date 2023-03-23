@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!-- head -->
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="">
+   <meta name="date" content="">
+   <title>차트(기본)</title>
+   <link type="text/css" rel="stylesheet" href="차트(기본).css">
+</head>
+
+<!-- body -->
+<body>
+    <div id="section">
+        <div id="section_table">
+            <table>
+                <tr>
+                    <th><input type="checkbox" id="Pick"></th>
+                    <th>순위</th>
+                    <th></th> <!-- 순위 변동 -->
+                    <th></th> <!-- 앨범 자켓 -->
+                    <th>곡정보</th> <!-- 곡 정보 -->
+                    <th>앨범</th>
+                    <th>좋아요</th>
+                    <th>듣기</th>
+                    <th>담기</th>
+                    <th>다운</th>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="Pick"></td>
+                    <td>1</td>
+                    <td>-</td>
+                    <td><img src="images/album.jpeg" class="albumImg"></td> <!-- 앨범 자켓 -->
+                    <td><a href="#" class="songName">Attention</a><br><a href="#" class="singer">NewJeans</a></td>
+                    <td><a href="#" class="albumName">NewJeans 1st EP 'New Jeans'</a></td>
+                    <td>🖤 125,723</td>
+                    <td>▶️</td>
+                    <td>✚</td>
+                    <td>☺︎</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="Pick"></td>
+                    <td>2</td>
+                    <td>-</td>
+                    <td><img src="images/album2.jpeg" class="albumImg"></td> <!-- 앨범 자켓 -->
+                    <td><a href="#" class="songName">Pink Venom</a><br><a href="#" class="singer">BLACKPINK</a></td>
+                    <td><a href="#" class="albumName">Pink Venom</a></td>
+                    <td>🖤 86,540</td>
+                    <td>▶️</td>                        <td>✚</td>
+                    <td>☺︎</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="Pick"></td>
+                    <td>3</td>
+                    <td>-</td>
+                    <td><img src="images/album3.jpeg" class="albumImg"></td> <!-- 앨범 자켓 -->
+                    <td><a href="#" class="songName">After LIKE</a><br><a href="#" class="singer">IVE (아이브)</a></td>
+                    <td><a href="#" class="albumName">After LIKE</a></td>
+                    <td>🖤 58,753</td>
+                    <td>▶️</td>
+                    <td>✚</td>
+                    <td>☺︎</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="Pick"></td>
+                    <td>4</td>
+                    <td>-</td>
+                    <td><img src="images/album.jpeg" class="albumImg"></td> <!-- 앨범 자켓 -->
+                    <td><a href="#" class="songName">Hype boy</a><br><a href="#" class="singer">NewJeans</a></td>
+                    <td><a href="#" class="albumName">NewJeans 1st EP 'New Jeans'</a></td>
+                    <td>🖤 87,356</td>
+                    <td>▶️</td>
+                    <td>✚</td>
+                    <td>☺︎</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="Pick"></td>
+                    <td>5</td>
+                    <td>-</td>
+                    <td><img src="images/album4.jpeg" class="albumImg"></td> <!-- 앨범 자켓 -->
+                    <td><a href="#" class="songName">FOREVER 1</a><br><a href="#" class="singer">소녀시대 (GIRLS'GENARATION)</a></td>
+                    <td><a href="#" class="albumName">FOREVER 1 - The 7th Album</a></td>                        <td>🖤 65,118</td>
+                    <td>▶️</td>
+                    <td>✚</td>
+                    <td>☺︎</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="Pick"></td>
+                    <td>6</td>
+                    <td>-</td>
+                    <td><img src="images/album5.jpeg" class="albumImg"></td> <!-- 앨범 자켓 -->
+                    <td><a href="#" class="songName">그때 그 순간 그대로 (그그그)</a><br><a href="#" class="singer">WSG워너비 (가야G)</a></td>
+                    <td><a href="#" class="albumName">WSG워너비 1집</a></td>
+                    <td>🖤 105,176</td>
+                    <td>▶️</td>
+                    <td>✚</td>
+                    <td>☺︎</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="Pick"></td>
+                    <td>7</td>
+                    <td>-</td>
+                    <td><img src="images/album6.jpeg" class="albumImg"></td> <!-- 앨범 자켓 -->
+                    <td><a href="#" class="songName">LOVE DIVE</a><br><a href="#" class="singer">IVE (아이브)</a></td>
+                    <td><a href="#" class="albumName">LOVE DIVE</a></td>
+                    <td>🖤 185,243</td>
+                    <td>▶️</td>
+                    <td>✚</td>
+                    <td>☺︎</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="Pick"></td>
+                    <td>8</td>
+                    <td>-</td>
+                    <td><img src="images/album5.jpeg" widtd="60px" height="60px" id="albumImg"></td> <!-- 앨범 자켓 -->
+                    <td><a href="#" class="songName">보고싶었어</a><br><a href="#" class="singer">WSG워너비 (4FIRE)</a></td>
+                    <td><a href="#" class="albumName">WSG워너비 1집</a></td>
+                    <td>🖤 103,877</td>
+                    <td>▶️</td>
+                    <td>✚</td>
+                    <td>☺︎</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="Pick"></td>
+                    <td>9</td>
+                    <td>-</td>
+                    <td><img src="images/album7.jpeg" class="albumImg"></td> <!-- 앨범 자켓 -->
+                    <td><a href="#" class="songName">SNEAKERS</a><br><a href="#" class="singer">ITZY (있지)</a></td>
+                    <td><a href="#" class="albumName">CHECKMATE</a></td>
+                    <td>🖤 57,944</td>
+                    <td>▶️</td>
+                    <td>✚</td>
+                    <td>☺︎</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="Pick"></td>
+                    <td>10</td>
+                    <td>-</td>
+                    <td><img src="images/album8.jpeg" class="albumImg"></td> <!-- 앨범 자켓 -->
+                    <td><a href="#" class="songName">사랑은 늘 도망가</a><br><a href="#" class="singer">임영웅</a></td>
+                    <td><a href="#" class="albumName">신사와 아가씨 OST Part.2</a></td>
+                    <td>🖤 172,476</td>
+                    <td>▶️</td>
+                    <td>✚</td>
+                    <td>☺︎</td>
+                </tr>
+            </table>
+            <div id="section_etc">더보기 ⩒</div>
+        </div>
+    </div>
+</body>
+
+<!-- script -->
+<script>
+
+</script>
+</html>

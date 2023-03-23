@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Join</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <style>
+        li {
+            list-style-type: none;
+        }
+        h1{
+            color: #ff4056;
+        text-align: center;
+        margin-top: 90px;
+        }
+        hr {
+        border: 2px solid #ffd2e2 ;
+        }
+    
+        div {
+            text-align: center;
+            margin-bottom: 0 auto;
+        }
+        footer{
+            width: 1000px;
+            margin: auto;
+            padding-top: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ff4056;
+        }
+        #layout {
+            border: 2px solid pink;
+            background-color: rgb(253, 255, 219);
+            width: 0 auto;
+            margin-bottom: 20px;
+            /* text-align: center; */
+            font-size: 16px;
+        }
+        button {
+            margin-bottom: 13px;
+            font-size: 15px;
+        }
+        form {
+            margin-bottom: 5px;
+            text-align: left;
+            padding-left: 600px;
+        }
+        input {
+            font-size: 17px;
+        }
+        select {
+            font-size: 15px;
+
+        }
+        body {font-family: Arial, Helvetica, sans-serif;}
+       #lan {
+            text-align: right;
+        }
+        #logo_plum{
+            margin-left: -600px;
+            text-align: center;
+        }
+        #footer_top{
+    height: 80px;
+    margin-bottom:20px;
+}
+
+#footer_top_left{
+    float: left;
+}
+
+#footer_top_right{
+    float: right;
+}
+
+#footer_top_left>ul>li{
+    float:left;
+    font-size:16px;
+    margin:15px;    
+    
+}
+
+#footer_top_right>ul>li{
+    float:left;
+    margin:3px;
+    padding-top: 9px;
+}
+
+#footer_middle1{
+    height: 49px;
+    margin-bottom:9px;
+    padding-bottom: 1px;
+}
+
+#footer_middle1>ul>li{
+    float:left;
+    margin: 20px;
+    margin-right: 1px;
+    font-size: 14px;
+}
+
+#footer_middle2{
+    height:40px;
+    margin-bottom: 2px;
+    
+}
+
+#footer_middle2>ul>li{
+    float: left;
+    margin:20px;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+    font-size: 13px;
+    color: #808080;
+}
+
+#footer_middle3{
+    height: 50px;
+    margin-top: 2px;
+}
+
+#footer_middle3>ul>li{
+    float: left;
+    margin: 20px;
+    font-size: 13px;
+    margin-top: 2px;
+    padding-top: 2px;
+    color: #808080;
+}
+
+#footer_bottom{
+    height: 30px;
+}
+
+#footer_bottom>ul>li{
+    float: left;
+    margin: 20px;
+    font-size: 13px;
+    margin-top: 2px;
+    padding-top: 2px;
+}
+#section_boxFoot {
+    margin-top: 60px;
+    width: 1000px;
+    height: 600px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 0 auto;
+}
+
+#section_boxFootL {
+    width: 200px;
+    height: 80px;
+    margin: 0 auto;
+    font-size: 30px;
+    color:cornflowerblue;
+    text-align: center;
+}
+#section_boxFootR {
+    padding-left: 45px;
+    padding-right: 45px;
+    text-align: left;
+}
+#section_boxFootR>ul>li {
+    float: left;
+}
+    </style>
+</head>
+<body>
+    <h1><a href="메인페이지.html"><b>Plum</b></a></h1>
+    <hr>
+  
+    <form id="layout">
+        <p>아이디 : <input type="id" name="id"></p>
+        <p>비밀번호 : <input type="pwd" name="password"></p>
+        <p>성별 : <input type="sex" name="sex"></p>
+  
+        <p>비밀번호 재확인 : <input type="rpwd" name="repwd" pattern="\d{2,3}-\d{3,4}-\d{4}"></p>
+        <p>이름 : <input type="name" name="name"></p>
+        <p>생년월일 : <input type="text" name="name" maxlength="4" placeholder="년(4자)">
+            <select name="month">
+                <option value="month" selected>월</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <input type="text" maxlength="2" placeholder="일"></p>
+            <p>휴대전화 : <input type="text" placeholder="전화번호 입력">
+            <button type="button">인증번호 받기</button></p>
+            <input type="text" placeholder="인증번호 입력하세요">
+            <button type="button">확인</button><br>
+            
+       
+       
+        <div id="button"><button id="logo_plum" type="button">PLUM</button></div>
+        <br>
+
+    </form>
+   
+    <div id="section_boxFoot">
+        <div id="section_boxFootL">이용약관</div>
+        <div id="section_boxFootR">
+            <ul class="section_boxFootB">
+                <li>제1장. 총칙</li>
+                <li>제 1 조 (목적)</li>
+                <li><br>본 약관은 회원이 (주)플럼(이하 “회사”라 합니다)에서 제공하는 유무선 인터넷 음악포탈 벅스 서비스(이하 '서비스'라 한다)의 회원과 회사간의 권리, 의무 및 책임사항 등 기본적인 사항을 규정함을 목적으로 합니다.</li>
+                
+                <li><br><br>제 2 조 (약관의 효력 및 변경)</li>
+                <li><br>1. 본 약관은 서비스를 이용하고자 하는 모든 회원에 대하여 그 효력을 발생합니다.
+                    <br>2. 본 약관의 내용은 서비스 화면에 게시하거나 기타의 방법으로 회원에게 공지하고, 이에 동의한 회원이 서비스에 가입함으로써 효력이 발생합니다.
+                    <br>3. 회사는 필요하다고 인정되는 경우 본 약관을 변경할 수 있으며, 약관이 변경된 경우에는 지체 없이 제2항과 같은 방법으로 공지합니다. 다만, 이용자의 권리 또는 의무에 관한 중요한 규정의 변경은 최소한 7일전에 공지하며 개정 내용이 이용자에게 불리할 경우에는 30일간 고지합니다.
+                    <br>4. 이용자는 변경된 약관 사항에 동의하지 않으면 서비스 이용을 중단하고 이용 계약을 해지할 수 있습니다.</li>
+                <li><br><br><b><input type="checkbox" name="accept">플럼 이용약관, 개인정보 수집 및 이용, 위치기반서비스 이용약관(선택), 프로모션 정보 수신(선택)에 모두 동의합니다.</b></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer_top">
+            <div id="footer_top_left">
+                <ul>
+                    <li><b>PLUM 소개</b></li>
+                    <li><b>공지사항</b></li>
+                    <li><b>고객센터</b></li>
+                    <li><b>PLUM 플레이어 다운로드</b></li>
+                    <li><b>PLUM 크리에이터 스튜디오</b></li>
+                </ul>
+            </div>
+            <div id="footer_top_right">
+                <ul>
+                    <li><img src="img/footer1.png"></li>
+                    <li><img src="img/footer2.png"></li>
+                    <li><img src="img/footer3.png"></li>
+                    <li><img src="img/footer4.png"></li>
+                </ul>
+            </div>
+
+        </div>
+        <div id="footer_middle1">
+            <ul>
+                <li>회사소개&nbsp;&nbsp;&nbsp;|</li>
+                <li>이용약관&nbsp;&nbsp;&nbsp;|</li>
+                <li>개인정보 처리방침&nbsp;&nbsp;&nbsp;|</li>
+                <li>청소년 보호정책 &nbsp;&nbsp;&nbsp;|</li>
+                <li>사업자정보 확인</li>
+                
+            </ul>
+        </div>
+        <div id="footer_middle2">
+            <ul>
+                <li>플럼하우스 : 서울특별시 서초구 강남대로 311 드림플러스 15F</li>
+                <li>대표전화 : 1599-1111</li>
+            </ul>
+        </div>
+        <div id="footer_middle3">
+            <ul>
+                <li>대표이사 :김동훈</li>
+                <li>이메일 : plum@music-plum.com</li>
+                <li>사업자 등록번호 : 123-459-789</li>
+                <li>통신판매업 신고번호 : 2222-222</li>
+            </ul>
+        </div>
+        <div id="footer_bottom">
+            <ul>
+                <li><b>(주)인천일보아카데미</b></li>
+                <li><b>ALL RIGHTS RESERVED</b></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

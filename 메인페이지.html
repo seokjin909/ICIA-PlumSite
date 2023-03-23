@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!-- head -->
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="">
+   <meta name="date" content="">
+   <title>메인페이지</title>
+   <link type="text/css" rel="stylesheet" href="메인페이지.css">
+</head>
+
+<!-- body -->
+<body>
+    <header> 
+        <!-- header_top 영역입니다. -->
+        <div id="header_top">
+            <div id="header_top_wrap">
+                <div id="header_top_left"><a href="이용권.html">이용권 구매</a></div>
+                <nav id="header_top_nav">
+                    <ul>
+                        <li>고객센터</li>
+                        <li>이벤트</li>
+                        <li>공지사항</li>
+                        <li><a href="로그인.html">로그인</a></li>
+                        <li><a href="회원가입.html">회원가입</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- header_bottom 영역입니다. -->
+        <div id="header_bottom">
+            <div id="header_bottom_wrap">
+                <div id="header_bottom_main">
+                    <h1 id="logo" style="color: #ff4056!important;">Plum</h1>
+                    <input type="text" id="search" placeholder="난 더울수록 더 힙한 노랠 들어">
+                    <nav id="header_bottom_menu">
+                        <ul class="dropdown">
+                            <li><img src="images/guest.png" id="guest"></li>
+                            <li>|&nbsp;&nbsp;&nbsp;마이뮤직&nbsp;&nbsp;&nbsp;|</li>
+                            <li id="header_menu"><a href="#">메뉴 ▼</a>
+                                <ul class="dropdownF">
+                                    <li><a href="#">마이메뉴</a></li>
+                                    <li><a href="#">구입한 노래</a></li>
+                                    <li><a href="#">좋아요한 노래</a></li>
+                                    <li><a href="#">나의 정보</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="header_bottom_left">
+                    <nav id="header_bottom_nav">
+                        <ul>
+                            <li><a href="차트.html">플럼차트</a></li>
+                            <li>최신음악</li>
+                            <li>장르음악</li>
+                            <li>플럼DJ</li>
+                            <li>플럼TV</li>
+                            <li>스타포스트</li>
+                            <li>매거진</li>
+                            <li>뮤직어워드</li>
+                            <li>어학</li>
+                        </ul>
+                    </nav>
+                    <div id="header_bottom_right"><a href="플레이리스트.html">플레이리스트</a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+    <!-- section 영역 -->
+
+    <section>
+
+        <!--슬라이더-->
+        <div class="image_slider_wrap">
+            <!-- <div><img src="img/arrow_left.png" id="arrow_left"></div> -->
+            <div class="slider_arrow">
+                <div id="arrow_prev"></div>
+                <div id="arrow_next"></div>
+            </div>
+            
+            <div class="image_slider">
+                <input type="radio" name="pos" id="pos1" checked>
+                <input type="radio" name="pos" id="pos2" checked>
+                <input type="radio" name="pos" id="pos3" checked>
+                <input type="radio" name="pos" id="pos4" checked>
+    
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <p class="pos">
+                    <label for="pos1"></label>
+                    <label for="pos2"></label>
+                    <label for="pos3"></label>
+                    <label for="pos4"></label>
+                </p>
+            </div>
+            
+            <!-- <div><img src="img/arrow_right.png" id="arrow_right"></div> -->
+            
+        </div>
+        <div id="today_album">
+            <h1><a href="앨범.html">오늘 발매 음원 ></a></h1>
+            <table id="album_table1">
+                <tr id="album_img">
+                    <td><img src="img/album1.png" width="180px" height="180px"></td>
+                    <td><img src="img/album8.png" width="180px" height="180px"></td>
+                    <td><img src="img/album10.png" width="180px" height="180px"></td>
+                    <td><img src="img/album5.png" width="180px" height="180px"></td>
+                    <td><img src="img/album4.png" width="180px" height="180px"></td>
+                </tr>
+                <tr id="song">
+                    <td><b>낮잠(Nap Fairy) - SM STATION</b></td>
+                    <td><b>Autumn</b></td>
+                    <td><b>undergrOund idOl #3</b></td>
+                    <td><b>해피엔딩</b></td>
+                    <td><b>love you more,</b></td>
+                </tr>
+                <tr id="singer">
+                    <td>예리(YERI) & 생김(Sam Kim)</td>
+                    <td>다크비(DKB)</td>
+                    <td>준지(OnlyOneOf)</td>
+                    <td>홍대광</td>
+                    <td>YOUHA(유하)</td>
+
+                </tr>
+            </table>
+            <table id="album_table2">
+                <tr id="album_img">
+                    <td><img src="img/album3.png" width="180px" height="180px"></td>
+                    <td><img src="img/album6.png" width="180px" height="180px"></td>
+                    <td><img src="img/album7.png" width="180px" height="180px"></td>
+                    <td><img src="img/album2.png" width="180px" height="180px"></td>
+                    <td><img src="img/album9.png" width="180px" height="180px"></td>
+                </tr>
+                <tr id="song">
+                    <td><b>나쁜 남자</b></td>
+                    <td><b>둘만 있는 세상에서</b></td>
+                    <td><b>DIAMOND (다이아몬드)</b></td>
+                    <td><b>사랑 그런거</b></td>
+                    <td><b>NO PAIN</b></td>
+                </tr>
+                <tr id="singer">
+                    <td>정피트</td>
+                    <td>정해원</td>
+                    <td>더 베인(The VANE)</td>
+                    <td>2am</td>
+                    <td>실리카겔</td>
+
+                </tr>
+            </table>
+        </div>
+        <div id="section_bottom">
+            <div id="playlist">
+                <h1><a href="플레이리스트.html">플레이리스트 ></a></h1>
+                    <div id="playlist_chart">
+                        <ul>
+                            <li>내 리스트</li>
+                            <li>♡좋아요</li>
+                            <li>많이 들은 곡</li>
+                            <li>최근 감상</li>
+                        </ul>
+                    </div>
+                    <div id="radio_wrap">
+                            <table id="playlist_table_wrap">
+                                <tr id="table_title">
+                                    <td><input type="checkbox"id="table_header"  name="selectSong"></td>
+                                    <td>NO</td>
+                                    <td>곡명</td>
+                                    <td>아티스트</td>
+                                    <td>좋아요</td>
+                                    <td>다운</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="selectSong"></td>
+                                    <td>1</td>
+                                    <td>바라만 본다</td>
+                                    <td>MSG워너비</td>
+                                    <td>♥ 180,787</td>
+                                    <td><img src="img/download.png" width="25px" height="26px"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="selectSong"></td>
+                                    <td>2</td>
+                                    <td>해요(2022)</td>
+                                    <td>#안녕</td>
+                                    <td>♥ 28,899</td>
+                                    <td><img src="img/download.png" width="25px" height="26px"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="selectSong"></td>
+                                    <td>3</td>
+                                    <td>STEP</td>
+                                    <td>카라</td>
+                                    <td>♥ 38,724</td>
+                                    <td><img src="img/download.png" width="25px" height="26px"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="selectSong"></td>
+                                    <td>4</td>
+                                    <td>FOREVER 1</td>
+                                    <td>소녀시대</td>
+                                    <td>♥ 67,364</td>
+                                    <td><img src="img/download.png" width="25px" height="26px"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="selectSong"></td>
+                                    <td>5</t,d>
+                                    <td>피날레(Show And Prove)</td>
+                                    <td>비투비</td>
+                                    <td>♥ 16,506</td>
+                                    <td><img src="img/download.png" width="25px" height="26px"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="selectSong"></td>
+                                    <td>6</td>
+                                    <td>미워도 사랑하니까</td>
+                                    <td>다비치</td>
+                                    <td>♥ 41,180</td>
+                                    <td><img src="img/download.png" width="25px" height="26px"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="selectSong"></td>
+                                    <td>7</td>
+                                    <td>DUMB DUMB</td>
+                                    <td>전소미</td>
+                                    <td>♥ 94,887</td>
+                                    <td><img src="img/download.png" width="25px" height="26px"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="selectSong"></td>
+                                    <td>8</td>
+                                    <td>FEARLESS</td>
+                                    <td>LE SSERAFIM</td>
+                                    <td>♥ 69,647</td>
+                                    <td><img src="img/download.png" width="25px" height="26px"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="selectSong"></td>
+                                    <td>9</td>
+                                    <td>사랑인걸</td>
+                                    <td>한동근</td>
+                                    <td>♥ 33,679</td>
+                                    <td><img src="img/download.png" width="25px" height="26px"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="selectSong"></td>
+                                    <td>10</td>
+                                    <td>INVU</td>
+                                    <td>태연(TAEYEON)</td>
+                                    <td>♥ 41,180</td>
+                                    <td><img src="img/download.png" width="25px" height="26px"></td>
+                                </tr>
+                            </table>
+                        </div>
+                </div>
+            <div id="chart">
+                <h1><a href="차트.html">플럼차트 ></a></h1>
+                <div id="chart_top">
+                    <div>TOP10</div>
+                    <div>POP</div>
+                    <div>☆ 아티스트</div>
+                </div>
+                <div id="chart_bottom">
+                    <nav class="chart_list">
+                        <ul>
+                            <li>1</li>
+                            <li>-</li>
+                            <li><img src="images/album2.jpeg" class="chart_img">Pink Venom</li>
+                            <li>BLACKPINK</li>
+                        </ul>
+                    </nav>
+                    <nav class="chart_list2">
+                        <ul>
+                            <li>2</li>
+                            <li>-</li>
+                            <li>COSMOS</li>
+                            <li>B.I</li>
+                        </ul>
+                    </nav>
+                    <nav class="chart_list2">
+                        <ul>
+                            <li>3</li>
+                            <li>-</li>
+                            <li>Monster</li>
+                            <li>Eldon</li>
+                        </ul>
+                    </nav>
+                    <nav class="chart_list2">
+                        <ul>
+                            <li>4</li>
+                            <li>-</li>
+                            <li>검정색하트 (Feat. Leellamarz & BE'O)</li>
+                            <li>TOIL</li>
+                        </ul>
+                    </nav>
+                    <nav class="chart_list2">
+                        <ul>
+                            <li>5</li>
+                            <li>-</li>
+                            <li>If i die (Feat. ASH ISLAND</li>
+                            <li>skinny brown</li>
+                        </ul>
+                    </nav>
+                    <nav class="chart_list2">
+                        <ul>
+                            <li>6</li>
+                            <li>-</li>
+                            <li>신경꺼</li>
+                            <li>ASH ISLAND</li>
+                        </ul>
+                    </nav>
+                    <nav class="chart_list2">
+                        <ul>
+                            <li>7</li>
+                            <li>-</li>
+                            <li>Selfish</li>
+                            <li>릴러말즈 (Leellamarz)</li>
+                        </ul>
+                    </nav>
+                    <nav class="chart_list2">
+                        <ul>
+                            <li>8</li>
+                            <li>-</li>
+                            <li>High</li>
+                            <li>5 Seconds Of Summer</li>
+                        </ul>
+                    </nav>
+                    <nav class="chart_list2">
+                        <ul>
+                            <li>9</li>
+                            <li>-</li>
+                            <li>Old me</li>
+                            <li>5 Seconds Of Summer</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="footer_top">
+            <div id="footer_top_left">
+                <ul>
+                    <li><b>PLUM 소개</b></li>
+                    <li><b>공지사항</b></li>
+                    <li><b>고객센터</b></li>
+                    <li><b>PLUM 플레이어 다운로드</b></li>
+                    <li><b>PLUM 크리에이터 스튜디오</b></li>
+                </ul>
+            </div>
+            <div id="footer_top_right">
+                <ul>
+                    <li><img src="img/footer1.png"></li>
+                    <li><img src="img/footer2.png"></li>
+                    <li><img src="img/footer3.png"></li>
+                    <li><img src="img/footer4.png"></li>
+                </ul>
+            </div>
+
+        </div>
+        <div id="footer_middle1">
+            <ul>
+                <li>회사소개&nbsp;&nbsp;&nbsp;|</li>
+                <li>이용약관&nbsp;&nbsp;&nbsp;|</li>
+                <li>개인정보 처리방침&nbsp;&nbsp;&nbsp;|</li>
+                <li>청소년 보호정책 &nbsp;&nbsp;&nbsp;|</li>
+                <li>사업자정보 확인</li>
+                
+            </ul>
+        </div>
+        <div id="footer_middle2">
+            <ul>
+                <li>플럼하우스 : 서울특별시 서초구 강남대로 311 드림플러스 15F</li>
+                <li>대표전화 : 1599-1111</li>
+            </ul>
+        </div>
+        <div id="footer_middle3">
+            <ul>
+                <li>대표이사 :김동훈</li>
+                <li>이메일 : plum@music-plum.com</li>
+                <li>사업자 등록번호 : 123-459-789</li>
+                <li>통신판매업 신고번호 : 2222-222</li>
+            </ul>
+        </div>
+        <div id="footer_bottom">
+            <ul>
+                <li><b>(주)인천일보아카데미</b></li>
+                <li><b>ALL RIGHTS RESERVED</b></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+<!-- script -->
+<script>
+
+</script>
+</html>

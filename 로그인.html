@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>PLUM</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+<style>
+
+    li {
+      list-style-type: none;
+    }
+    hr {
+        border: 2px solid #ffd2e2 ;
+    }
+    .container{
+        text-align: center;
+    }
+    h1 {
+        color: #ff4056;
+        text-align: center;
+        margin-top: 90px;
+    }
+    ul{
+        text-align: center;
+    } 
+    #footer {
+      margin-bottom: 0%;
+    }
+  a {
+    text-decoration: none;
+    color: #ff4056;
+  }
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+
+input[type=text], input[type=password] {
+  width: 300px;
+  height: 50px;
+  padding: 20px 20px;
+  margin: 10px 0;
+  border: 1px solid rgb(255, 157, 157);
+  box-sizing: border-box;
+  margin-top: 15px;
+}
+
+button {
+  background-color: #ff4056;
+  color: white;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: 1px solid white;
+  cursor: pointer;
+  width: 150px;
+  margin-left: 0 auto;
+  font-size: 17px;
+}
+
+button:hover {
+  opacity: 0.8;
+
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 20px;
+  background-color: #ffc0bc;
+}
+
+.container {
+  padding: 50px;
+  border: 2px solid pink;
+            background-color: rgb(253, 255, 219);
+            width: auto;
+            margin-bottom: 20px;
+            text-align: center;
+ 
+}
+
+span.psw {
+  float: right;
+  padding-top: 18px;
+}
+
+#inputId{
+  margin-left : 20px;
+  font-size: 15px;
+}
+#pwd {
+  margin-left: 10px;
+  font-size: 15px;
+}
+footer{
+    width: 1000px;
+    margin: auto;
+    padding-top: 50px;
+}
+#footer_top{
+    height: 80px;
+    margin-bottom:20px;
+}
+
+#footer_top_left{
+    float: left;
+}
+
+#footer_top_right{
+    float: right;
+}
+
+#footer_top_left>ul>li{
+    float:left;
+    font-size:16px;
+    margin:15px;    
+    
+}
+
+#footer_top_right>ul>li{
+    float:left;
+    margin:3px;
+    padding-top: 9px;
+}
+
+#footer_middle1{
+    height: 49px;
+    margin-bottom:9px;
+    padding-bottom: 1px;
+}
+
+#footer_middle1>ul>li{
+    float:left;
+    margin: 20px;
+    margin-right: 1px;
+    font-size: 14px;
+}
+
+#footer_middle2{
+    height:40px;
+    margin-bottom: 2px;
+    
+}
+
+#footer_middle2>ul>li{
+    float: left;
+    margin:20px;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+    font-size: 13px;
+    color: #808080;
+}
+
+#footer_middle3{
+    height: 50px;
+    margin-top: 2px;
+}
+
+#footer_middle3>ul>li{
+    float: left;
+    margin: 20px;
+    font-size: 13px;
+    margin-top: 2px;
+    padding-top: 2px;
+    color: #808080;
+}
+
+#footer_bottom{
+    height: 30px;
+}
+
+#footer_bottom>ul>li{
+    float: left;
+    margin: 20px;
+    font-size: 13px;
+    margin-top: 2px;
+    padding-top: 2px;
+}
+#logIn {
+  width: 500px;
+}
+</style>
+</head>
+<body>
+
+<h1><a href="메인페이지.html"><b>Plum</b></a></h1>
+    <hr>
+<form>
+  <div class="container">
+    <div id="id">
+      <label for="uname"><b>아이디</b></label>
+      <input id="inputId" type="text" placeholder="Enter ID" name="uname" required>
+      <br>
+      <label for="psw"><b>비밀번호</b></label>
+      <input id="pwd" type="password" placeholder="Enter PW" name="psw" required>
+    </div>
+ <div>
+    <div><button type="submit" id="logIn">Login</button></div>
+    <div><button type="submit" id="logIn">카카오 로그인</button></div>
+  </div>
+  </form>
+
+<form>
+    <input type="submit" value="비밀번호 찾기">
+        <input type="reset" value="아이디 찾기">
+        <input type="reset" value="회원가입"><br>
+</form>
+</form>
+</div>
+
+<footer>
+  <div id="footer_top">
+      <div id="footer_top_left">
+          <ul>
+              <li><b>PLUM 소개</b></li>
+              <li><b>공지사항</b></li>
+              <li><b>고객센터</b></li>
+              <li><b>PLUM 플레이어 다운로드</b></li>
+              <li><b>PLUM 크리에이터 스튜디오</b></li>
+          </ul>
+      </div>
+      <div id="footer_top_right">
+          <ul>
+              <li><img src="img/footer1.png"></li>
+              <li><img src="img/footer2.png"></li>
+              <li><img src="img/footer3.png"></li>
+              <li><img src="img/footer4.png"></li>
+          </ul>
+      </div>
+
+  </div>
+  <div id="footer_middle1">
+      <ul>
+          <li>회사소개&nbsp;&nbsp;&nbsp;|</li>
+          <li>이용약관&nbsp;&nbsp;&nbsp;|</li>
+          <li>개인정보 처리방침&nbsp;&nbsp;&nbsp;|</li>
+          <li>청소년 보호정책 &nbsp;&nbsp;&nbsp;|</li>
+          <li>사업자정보 확인</li>
+          
+      </ul>
+  </div>
+  <div id="footer_middle2">
+      <ul>
+          <li>플럼하우스 : 서울특별시 서초구 강남대로 311 드림플러스 15F</li>
+          <li>대표전화 : 1599-1111</li>
+      </ul>
+  </div>
+  <div id="footer_middle3">
+      <ul>
+          <li>대표이사 :김동훈</li>
+          <li>이메일 : plum@music-plum.com</li>
+          <li>사업자 등록번호 : 123-459-789</li>
+          <li>통신판매업 신고번호 : 2222-222</li>
+      </ul>
+  </div>
+  <div id="footer_bottom">
+      <ul>
+          <li><b>(주)인천일보아카데미</b></li>
+          <li><b>ALL RIGHTS RESERVED</b></li>
+      </ul>
+  </div>
+</footer>
+
+</body>
+</html>

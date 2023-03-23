@@ -1,0 +1,355 @@
+/* 공통 적용 스타일 */
+* {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style : none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+table {
+    border-collapse: collapse;
+    width: 1008px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+/* 구성 영역 레이아웃 */
+
+header {
+    height: 192px;
+    margin-bottom: 30px;
+}
+section {       /* section 영역 원하는대로 설정 */
+    height: 1200px;
+    border-bottom: 1px solid black;
+}
+footer{
+    width: 1000px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+/* header 영역 내부 요소 */
+
+#header_top {
+    height: 38px;
+    background-color: #ffd2e2;
+    border-top: 4px solid #ff4056;
+    border-bottom: 1px solid grey;
+}
+#header_bottom {
+    height: 154px;
+    border-bottom: 1px solid grey;
+}
+
+/* header_top의 내부 구성 요소 */
+#header_top_wrap {
+    margin: 0 auto;
+    width: 1000px;
+    line-height: 38px;
+}
+#header_top_left {
+    float: left;
+    height: 38px;
+    line-height: 38px;
+}
+#header_top_left:hover {
+    color: #ff4056;
+    cursor: pointer;
+}
+#header_top_nav {
+    float: right;
+}
+
+#header_top_nav>ul>li {
+    float: left;
+    margin: 0 10px;
+}
+#header_top_nav>ul>li:last-child {
+    margin-right: 0px;
+}
+#header_top_nav>ul>li:hover {
+    color: #808080;
+    cursor: pointer;
+}
+/* #header_bottom의 내부 구성 요소 */
+
+#header_bottom_wrap {
+    margin: 0 auto;
+    width: 1000px;
+}
+#header_bottom_main {
+    width: 1000px;
+    float: left;
+    height: 99px;
+    line-height: 99px;
+}
+#logo {
+    float: left;
+    margin-right: 40px;
+    color: #ff4056;
+    font-size: 50px;
+    cursor: pointer;
+}
+#search {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ff4056;
+    border-radius: 10px;
+    text-align: center;
+    background-image: url(images/search.png);
+    background-position: 280px center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+#header_bottom_menu {
+    float: right;
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
+    padding-top: 35px;
+}
+#header_bottom_menu>ul>li {
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdownF {
+    display: none;
+    position: absolute;
+    background-color: #ffd2e2;
+    min-width: 120px;
+    z-index: 1;
+}
+.dropdownF>li>a {
+    color: black;
+    display: block;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#header_menu:hover .dropdownF {
+    display: block;
+}
+.dropdownF a:hover {
+    background-color: pink;
+}
+#header_bottom_left {
+    width: 1000px;
+    float: left;
+    height: 56px;
+    line-height: 56px;
+    font-size: 20px;
+}
+#header_bottom_nav {
+    float: left;
+}
+#header_bottom_nav>ul>li {
+    float: left;
+    margin: 0 10px;
+    line-height: 56px;
+}
+#header_bottom_nav>ul>li:first-child {
+    margin-left: 0;
+    color: #ff4056;
+}
+#header_bottom_nav>ul>li:hover {
+    color: #ff4056;
+    cursor: pointer;
+}
+#header_bottom_right {
+    float: right;  
+    line-height: 56px;
+}
+#header_bottom_right:hover {
+    color: #ff4056;
+    cursor: pointer;
+}
+#guest {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: -45px;
+}
+
+
+/* section 영역 내부 요소 */
+#section_box {
+    width: 1008px;
+    margin: 0 auto;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 20px;
+}
+#section_nav {
+    float: left;
+}
+#section_nav>ul>li {
+    margin-right: 10px;
+    text-align: center;
+    float: left;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid grey;
+    border-radius: 25px;
+    color: black;
+    transition: border, color;
+    transition-duration: 1s;
+    cursor: pointer;
+    font-size: 14px;
+}
+#section_nav>ul>li:hover {
+    border: 1px solid #ff4056;
+    color: #ff4056;
+}
+
+#section_etc {
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 1px solid grey;
+    border-radius: 25px;
+    color: black;
+    transition: border, color;
+    transition-duration: 1s;
+    cursor: pointer;
+
+}
+#section_etc:hover {
+    border: 1px solid #ff4056;
+    color: #ff4056;
+}
+/* table 영역 내부 요소 */
+table, th, td {
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+th, td {
+    padding: 5px;
+    height: 80px;
+    vertical-align: middle;
+}
+th {
+    height: 40px;
+    border-top: 1px solid #ddd;
+    background-color: #f5f5f5b0;
+}
+td:nth-child(5) {
+    text-align: left;
+}
+th:nth-child(5) {
+    text-align: left;
+}
+td:nth-child(6) {
+    text-align: left;
+}
+th:nth-child(6) {
+    text-align: left;
+}
+.albumImg {
+    vertical-align: middle;
+    width: 70px;
+    height: 70px;
+}
+.singer {
+    font-size: 13px;
+    color: grey;
+}
+tr:hover {
+    background-color: #f5f5f5b0;
+}
+/* footer 영역 내부 요소 */
+
+#footer_top{
+    height: 45px;
+    margin-bottom:20px;
+}
+
+#footer_top_left{
+    float: left;
+}
+
+#footer_top_right{
+    float: right;
+}
+
+#footer_top_left>ul>li{
+    float:left;
+    font-size:16px;
+    margin:15px;    
+    
+}
+
+#footer_top_right>ul>li{
+    float:left;
+    margin:3px;
+    padding-top: 9px;
+}
+
+#footer_middle1{
+    height: 49px;
+    margin-bottom:9px;
+    padding-bottom: 1px;
+}
+
+#footer_middle1>ul>li{
+    float:left;
+    margin: 20px;
+    margin-right: 1px;
+    font-size: 14px;
+}
+
+#footer_middle2{
+    height:40px;
+    margin-bottom: 2px;
+    
+}
+
+#footer_middle2>ul>li{
+    float: left;
+    margin:20px;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+    font-size: 13px;
+    color: #808080;
+}
+
+#footer_middle3{
+    height: 50px;
+    margin-top: 2px;
+}
+
+#footer_middle3>ul>li{
+    float: left;
+    margin: 20px;
+    font-size: 13px;
+    margin-top: 2px;
+    padding-top: 2px;
+    color: #808080;
+}
+
+#footer_bottom{
+    height: 30px;
+}
+
+#footer_bottom>ul>li{
+    float: left;
+    margin: 20px;
+    font-size: 13px;
+    margin-top: 2px;
+    padding-top: 2px;
+}
